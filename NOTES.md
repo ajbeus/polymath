@@ -35,10 +35,11 @@ Backend (from `backend/`, Windows paths; venv already created):
 .venv/Scripts/python -m app.ingest --rescore       # after editing lens keywords or filters
 .venv/Scripts/python -m uvicorn app.main:app --port 8765
 ```
+Eval (from repo root): `backend/.venv/Scripts/python eval/run_eval.py worm` (add `--use-guesses` for unlabeled smoke test); `eval/build_pool.py worm` grows the pool.
 DB lives at `backend/data/polymath.sqlite` (git-ignored). Optional env: `NCBI_API_KEY`, `CONTACT_EMAIL`, `DIGEST_DAYS`, `POLYMATH_DB`.
 
 ## What's left
-1. **Eval set (next, before more ranking work):** 40+ hand-labelled worm papers (and per-lens queries) plus a harness in `eval/` computing precision@k, nDCG, citation validity. Rule: run it after any ranking change.
+1. **Eval set: harness built, labels need the user.** `eval/worm/pool.csv` has 120 papers (70 kept + 50 rejected by the worm filter). The `claude_guess` column is Claude's unreviewed first pass (31 relevant, 19 related, 70 not). User must fill the `label` column (0/1/2; see `eval/README.md`; check rows with a "Claude unsure" note first). Run `backend/.venv/Scripts/python eval/run_eval.py worm` after any ranking change. Smoke-test result with guesses: P@10 strict 0.80, nDCG@10 0.86, filter recall 0.97 strict / 0.90 lenient, kept precision 0.64 (NOT a measurement). Not built: per-question (Ask) eval, coverage vs chatbot, wiring results into `/status`, labeled sets for fusion/math.
 2. ~~Wire front end to backend~~ done: `http.ts`, `VITE_API_URL`, UI shows "n/a" for unscored criteria and handles null evaluation/ingest times and empty links. Verified in the browser with live data (digest, ask, feedback saved to SQLite, system page).
 3. **Stage 2 ranking:** Claude scores novelty/rigor/accessibility against the lens rubric (needs `ANTHROPIC_API_KEY`; track token cost for the status page).
 4. **bioRxiv ingest** (worm lens lists it; status shows 0 papers).

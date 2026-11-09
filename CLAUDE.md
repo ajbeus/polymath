@@ -6,7 +6,7 @@ Guidance for working in this repo.
 Polymath is a multi-topic science literature assistant (course project, CSE 455). A "lens" is a topic with its own sources, keywords, and scoring rubric. The front end currently runs entirely on **fake sample data**. There is no backend, no network fetching, and no API keys.
 
 ## Rules
-- **Run the evaluation harness after any ranking change.** (The harness lives in `eval/` and does not exist yet. When it does, this applies to anything touching scoring, rubric weights, filters, or prompts.)
+- **Run the evaluation harness after any ranking change.** The harness is `eval/run_eval.py` (see `eval/README.md`); run `backend/.venv/Scripts/python eval/run_eval.py worm` and report the change in metrics. This applies to anything touching scoring, rubric weights, lens keywords, filters, or prompts. Only human labels count as a measurement: Claude's `claude_guess` labels are provisional.
 - Never invent citations. Placeholder papers must stay obviously fake (`SAMPLE-` ids, "Sample Paper" titles, no URLs). Every screen showing placeholder content must show the **Sample data** badge.
 - The `showcase` build must contain no personal data. Full-only lens configs and fixtures live in `lenses/full/` and `frontend/src/api/fixtures/full/` so they are never bundled into showcase.
 - App and assistant names come from config (`frontend/src/config/app.ts`, env `VITE_APP_NAME`, `VITE_ASSISTANT_NAME`). Do not hardcode them in components.
@@ -33,7 +33,7 @@ polymath/
     app/scoring.py     stage-1 scoring: assigns papers to lenses
     app/ingest.py      ingest CLI
     data/              polymath.sqlite (git-ignored)
-  eval/                (planned) labeled sets and the evaluation harness
+  eval/                labeled pools (eval/<lens>/pool.csv) and the harness (run_eval.py, build_pool.py)
 ```
 Adding a lens = add `lenses/<tier>/<id>.json` and `frontend/src/api/fixtures/<tier>/<id>.json`. No code changes. Rubric criteria and weights come from the lens config and drive the score tooltip, breakdown bars, and the "How this lens scores" panel.
 
