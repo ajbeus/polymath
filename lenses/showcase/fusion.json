@@ -1,0 +1,61 @@
+{
+  "id": "fusion",
+  "name": "Fusion and energy",
+  "shortName": "Fusion",
+  "description": "Magnetic and inertial confinement fusion, plasma control, materials for reactors, and the surrogate models used to design them.",
+  "sources": [
+    "arxiv"
+  ],
+  "keywords": [
+    "tokamak",
+    "plasma",
+    "stellarator",
+    "confinement",
+    "disruption prediction",
+    "surrogate model",
+    "Gaussian process",
+    "divertor"
+  ],
+  "askExamples": [
+    "What is new in disruption prediction?",
+    "Gaussian process surrogate models for plasma"
+  ],
+  "rubric": [
+    {
+      "id": "relevance",
+      "label": "Relevance",
+      "weight": 0.35,
+      "description": "Addresses confinement, plasma control, reactor materials, or surrogate modelling."
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty",
+      "weight": 0.25,
+      "description": "Advances beyond the current published baseline."
+    },
+    {
+      "id": "rigor",
+      "label": "Rigor",
+      "weight": 0.25,
+      "description": "Reproducibility, uncertainty quantification, validation against experiments."
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility",
+      "weight": 0.15,
+      "description": "Readable without deep plasma-physics background."
+    }
+  ],
+  "accent": "#d9822b",
+  "builds": [
+    "showcase",
+    "full"
+  ],
+  "order": 2,
+  "arxiv": {
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "useKeywords": false
+  }
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "id": "SAMPLE-LINK-01",
+    "method": "Spectral embedding of high-dimensional recordings",
+    "explanation": "Sample explanation. Both placeholder papers pretend to reduce many-dimensional measurements to a few coordinates using eigenvectors of a similarity graph. In a real link this paragraph would say what is shared and where the two fields differ.",
+    "lensIds": [
+      "worm",
+      "math"
+    ],
+    "strength": 0.81,
+    "papers": [
+      {
+        "id": "SAMPLE-WORM-04",
+        "lensId": "worm",
+        "title": "Sample Paper W4: Imaginary interneuron circuit for odor discrimination",
+        "source": "pubmed",
+        "date": "2026-10-31",
+        "isSample": true
+      },
+      {
+        "id": "SAMPLE-MATH-04",
+        "lensId": "math",
+        "title": "Sample Paper M4: Imaginary spectral gap estimate on sample graphs",
+        "source": "arxiv",
+        "date": "2026-10-31",
+        "isSample": true
+      }
+    ],
+    "isSample": true
+  },
+  {
+    "id": "SAMPLE-LINK-03",
+    "method": "Constrained optimisation over structured design spaces",
+    "explanation": "Sample explanation. Placeholder stellarator coil design and a placeholder exponential-sum estimate both pretend to search a constrained space for an extremal object. The overlap is the optimisation technique, not the application.",
+    "lensIds": [
+      "fusion",
+      "math"
+    ],
+    "strength": 0.68,
+    "papers": [
+      {
+        "id": "SAMPLE-FUSION-04",
+        "lensId": "fusion",
+        "title": "Sample Paper F4: Imaginary stellarator optimisation with sample constraints",
+        "source": "arxiv",
+        "date": "2026-10-31",
+        "isSample": true
+      },
+      {
+        "id": "SAMPLE-MATH-06",
+        "lensId": "math",
+        "title": "Sample Paper M6: Fictional exponential sum estimate with sample constants",
+        "source": "arxiv",
+        "date": "2026-10-28",
+        "isSample": true
+      }
+    ],
+    "isSample": true
+  },
+  {
+    "id": "SAMPLE-LINK-04",
+    "method": "Active learning for experiment selection",
+    "explanation": "Sample explanation. A pretend worm-chemistry workflow and a pretend learned plasma controller both choose the next measurement to maximize information gained. Placeholder content only.",
+    "lensIds": [
+      "worm",
+      "fusion"
+    ],
+    "strength": 0.61,
+    "papers": [
+      {
+        "id": "SAMPLE-WORM-03",
+        "lensId": "worm",
+        "title": "Sample Paper W3: Mock GC-MS pipeline for headspace profiling",
+        "source": "biorxiv",
+        "date": "2026-11-01",
+        "isSample": true
+      },
+      {
+        "id": "SAMPLE-FUSION-06",
+        "lensId": "fusion",
+        "title": "Sample Paper F6: Fictional real-time control with learned dynamics",
+        "source": "arxiv",
+        "date": "2026-10-29",
+        "isSample": true
+      }
+    ],
+    "isSample": true
+  }
+]

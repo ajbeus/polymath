@@ -1,0 +1,129 @@
+{
+  "digest": {
+    "lensId": "space",
+    "weekOf": "2026-11-02",
+    "generatedAt": "2026-11-05T06:00:00Z",
+    "summary": "Sample digest. Placeholder papers cover exoplanet atmospheres and a transient survey. None of it is real.",
+    "sinceLastVisit": {
+      "text": "Sample note: 5 new placeholder papers since your last visit.",
+      "newPapers": 5,
+      "reranked": 0
+    },
+    "recommendedIds": [
+      "SAMPLE-SPACE-01",
+      "SAMPLE-SPACE-02",
+      "SAMPLE-SPACE-03"
+    ]
+  },
+  "papers": [
+    {
+      "id": "SAMPLE-SPACE-01",
+      "lensId": "space",
+      "title": "Sample Paper S1: Placeholder atmosphere retrieval for a fictional exoplanet",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-04",
+      "score": 0.77,
+      "summary": "Placeholder summary. Filler text.",
+      "whyMatched": "Sample match: exoplanet keyword.",
+      "rubric": {
+        "relevance": 0.89,
+        "novelty": 0.74,
+        "rigor": 0.7,
+        "accessibility": 0.62
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-SPACE-02",
+      "lensId": "space",
+      "title": "Sample Paper S2: Fictional transient survey with sample cadence",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-03",
+      "score": 0.73,
+      "summary": "Placeholder summary. Filler text.",
+      "whyMatched": "Sample match: transient keyword.",
+      "rubric": {
+        "relevance": 0.82,
+        "novelty": 0.7,
+        "rigor": 0.72,
+        "accessibility": 0.58
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-SPACE-03",
+      "lensId": "space",
+      "title": "Sample Paper S3: Mock constraint on a dark-matter parameter",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-01",
+      "score": 0.69,
+      "summary": "Placeholder summary. Filler text.",
+      "whyMatched": "Sample match: dark matter keyword.",
+      "rubric": {
+        "relevance": 0.75,
+        "novelty": 0.66,
+        "rigor": 0.76,
+        "accessibility": 0.5
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-SPACE-04",
+      "lensId": "space",
+      "title": "Sample Paper S4: Imaginary gravitational-wave population model",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-30",
+      "score": 0.68,
+      "summary": "Placeholder summary. Filler text.",
+      "whyMatched": "Sample match: gravitational waves keyword.",
+      "rubric": {
+        "relevance": 0.7,
+        "novelty": 0.78,
+        "rigor": 0.64,
+        "accessibility": 0.46
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-SPACE-05",
+      "lensId": "space",
+      "title": "Sample Paper S5: Placeholder primer on stellar populations",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-29",
+      "score": 0.58,
+      "summary": "Placeholder summary. A pretend primer.",
+      "whyMatched": "Sample match: stellar populations keyword.",
+      "rubric": {
+        "relevance": 0.6,
+        "novelty": 0.32,
+        "rigor": 0.68,
+        "accessibility": 0.92
+      },
+      "isSample": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+/* Colours are CSS variables so light/dark and the per-lens accent need no extra classes. */
+:root {
+  --paper: #f4f1e8;
+  --surface: #fbf9f3;
+  --ink: #1c1b17;
+  --muted: #655f52;
+  --rule: #d9d3c3;
+  --accent: #2f6f62;
+  --accent-ink: color-mix(in oklab, var(--accent) 62%, #000);
+  --accent-soft: color-mix(in oklab, var(--accent) 11%, var(--paper));
+  --warn: #8a5200;
+  --warn-soft: #f6e6c6;
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  --paper: #121519;
+  --surface: #1a1e24;
+  --ink: #ebe7dc;
+  --muted: #a39e90;
+  --rule: #2c323a;
+  --accent-ink: color-mix(in oklab, var(--accent) 55%, #fff);
+  --accent-soft: color-mix(in oklab, var(--accent) 16%, var(--paper));
+  --warn: #f0be6a;
+  --warn-soft: #3a2f17;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --font-serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+}
+
+html { background: var(--paper); }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection { background: color-mix(in oklab, var(--accent) 30%, transparent); }
+
+.skeleton {
+  background: color-mix(in oklab, var(--rule) 70%, transparent);
+  border-radius: 4px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse { 50% { opacity: 0.45; } }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 0.35s ease both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton, .rise { animation: none; }
+}
+
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }

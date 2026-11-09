@@ -1,0 +1,153 @@
+{
+  "digest": {
+    "lensId": "math",
+    "weekOf": "2026-11-02",
+    "generatedAt": "2026-11-05T06:00:00Z",
+    "summary": "Sample digest. Placeholder papers this week touch zeta zeros, random matrices and one pretend formalisation effort. All entries are fake and carry no real claims.",
+    "sinceLastVisit": {
+      "text": "Sample note: 6 new placeholder papers since your last visit; 3 moved up after a pretend re-rank.",
+      "newPapers": 6,
+      "reranked": 3
+    },
+    "recommendedIds": [
+      "SAMPLE-MATH-03",
+      "SAMPLE-MATH-02",
+      "SAMPLE-MATH-01",
+      "SAMPLE-MATH-04"
+    ]
+  },
+  "papers": [
+    {
+      "id": "SAMPLE-MATH-03",
+      "lensId": "math",
+      "title": "Sample Paper M3: Mock formalisation of a combinatorial identity in a proof assistant",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-02",
+      "score": 0.75,
+      "summary": "Placeholder summary. A pretend formal verification effort. High rigor is sample data.",
+      "whyMatched": "Sample match: proof assistant keyword.",
+      "rubric": {
+        "relevance": 0.76,
+        "novelty": 0.62,
+        "rigor": 0.93,
+        "accessibility": 0.55
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-MATH-02",
+      "lensId": "math",
+      "title": "Sample Paper M2: Fictional random-matrix model of prime gaps",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-03",
+      "score": 0.73,
+      "summary": "Placeholder summary. An invented link between random matrices and primes, used to show cross-lens style content.",
+      "whyMatched": "Sample match: random matrices and prime distribution keywords.",
+      "rubric": {
+        "relevance": 0.85,
+        "novelty": 0.78,
+        "rigor": 0.66,
+        "accessibility": 0.45
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-MATH-01",
+      "lensId": "math",
+      "title": "Sample Paper M1: Placeholder bounds on zeros of a zeta-like function",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-04",
+      "score": 0.7,
+      "summary": "Placeholder summary. A pretend result about the Riemann hypothesis and zeta zeros. It proves nothing; it exists to test search ranking.",
+      "whyMatched": "Sample match: \"Riemann hypothesis\" and \"zeta function\" overlap with the lens.",
+      "rubric": {
+        "relevance": 0.92,
+        "novelty": 0.7,
+        "rigor": 0.58,
+        "accessibility": 0.4
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-MATH-04",
+      "lensId": "math",
+      "title": "Sample Paper M4: Imaginary spectral gap estimate on sample graphs",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-31",
+      "score": 0.7,
+      "summary": "Placeholder summary. A made-up spectral theory result for layout testing.",
+      "whyMatched": "Sample match: spectral theory keyword.",
+      "rubric": {
+        "relevance": 0.71,
+        "novelty": 0.79,
+        "rigor": 0.72,
+        "accessibility": 0.38
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-MATH-05",
+      "lensId": "math",
+      "title": "Sample Paper M5: Placeholder survey of additive combinatorics methods",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-30",
+      "score": 0.61,
+      "summary": "Placeholder summary. A pretend survey. Low novelty, high accessibility by design.",
+      "whyMatched": "Sample match: combinatorics keyword; ranked lower as a survey.",
+      "rubric": {
+        "relevance": 0.64,
+        "novelty": 0.35,
+        "rigor": 0.74,
+        "accessibility": 0.88
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-MATH-06",
+      "lensId": "math",
+      "title": "Sample Paper M6: Fictional exponential sum estimate with sample constants",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-28",
+      "score": 0.61,
+      "summary": "Placeholder summary. Filler text only.",
+      "whyMatched": "Sample match: number theory keyword.",
+      "rubric": {
+        "relevance": 0.68,
+        "novelty": 0.66,
+        "rigor": 0.6,
+        "accessibility": 0.3
+      },
+      "isSample": true
+    }
+  ]
+}

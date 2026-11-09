@@ -1,0 +1,60 @@
+[
+  {
+    "id": "SAMPLE-LINK-02",
+    "method": "Gaussian-process surrogate models",
+    "explanation": "Sample explanation. A fusion placeholder paper and a cancer genomics placeholder paper both pretend to replace an expensive simulator or assay with a Gaussian-process surrogate that reports its own uncertainty. This is the example link from the project brief, filled with fake papers.",
+    "lensIds": [
+      "fusion",
+      "compbio"
+    ],
+    "strength": 0.77,
+    "papers": [
+      {
+        "id": "SAMPLE-FUSION-01",
+        "lensId": "fusion",
+        "title": "Sample Paper F1: Placeholder Gaussian-process surrogate for plasma profiles",
+        "source": "arxiv",
+        "date": "2026-11-04",
+        "isSample": true
+      },
+      {
+        "id": "SAMPLE-COMPBIO-01",
+        "lensId": "compbio",
+        "title": "Sample Paper C1: Placeholder Gaussian-process model for tumour variant effects",
+        "source": "biorxiv",
+        "date": "2026-11-04",
+        "isSample": true
+      }
+    ],
+    "isSample": true
+  },
+  {
+    "id": "SAMPLE-LINK-05",
+    "method": "Calibrated uncertainty for predictions",
+    "explanation": "Sample explanation. A placeholder disruption predictor and a placeholder robustness benchmark both pretend to measure whether stated confidence matches observed error.",
+    "lensIds": [
+      "fusion",
+      "aisafety"
+    ],
+    "strength": 0.58,
+    "papers": [
+      {
+        "id": "SAMPLE-FUSION-02",
+        "lensId": "fusion",
+        "title": "Sample Paper F2: Fictional disruption predictor with calibrated alarms",
+        "source": "arxiv",
+        "date": "2026-11-03",
+        "isSample": true
+      },
+      {
+        "id": "SAMPLE-AISAFETY-05",
+        "lensId": "aisafety",
+        "title": "Sample Paper A5: Placeholder robustness benchmark",
+        "source": "arxiv",
+        "date": "2026-10-28",
+        "isSample": true
+      }
+    ],
+    "isSample": true
+  }
+]

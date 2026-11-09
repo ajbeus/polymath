@@ -1,0 +1,64 @@
+{
+  "id": "math",
+  "name": "Mathematics",
+  "shortName": "Math",
+  "description": "Pure and applied mathematics: number theory, analysis, combinatorics, and the structures that cross into physics and computation.",
+  "sources": [
+    "arxiv"
+  ],
+  "keywords": [
+    "Riemann hypothesis",
+    "zeta function",
+    "number theory",
+    "prime distribution",
+    "combinatorics",
+    "spectral theory",
+    "random matrices",
+    "proof assistant"
+  ],
+  "askExamples": [
+    "What is new on the Riemann hypothesis?",
+    "Random matrices and prime gaps"
+  ],
+  "rubric": [
+    {
+      "id": "relevance",
+      "label": "Relevance",
+      "weight": 0.3,
+      "description": "On a topic in your watch list or the question you asked."
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty",
+      "weight": 0.3,
+      "description": "Introduces a new technique or result rather than extending an old one."
+    },
+    {
+      "id": "rigor",
+      "label": "Rigor",
+      "weight": 0.3,
+      "description": "Proof completeness, peer scrutiny, formal verification where available."
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility",
+      "weight": 0.1,
+      "description": "Readable without a specialist background."
+    }
+  ],
+  "accent": "#5b5bd6",
+  "builds": [
+    "showcase",
+    "full"
+  ],
+  "order": 3,
+  "arxiv": {
+    "categories": [
+      "math.NT",
+      "math.CO",
+      "math.SP",
+      "math.PR"
+    ],
+    "useKeywords": false
+  }
+}

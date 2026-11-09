@@ -1,0 +1,62 @@
+{
+  "id": "aisafety",
+  "name": "AI safety",
+  "shortName": "AI safety",
+  "description": "Alignment, interpretability, evaluation of model capabilities and risks, and robustness.",
+  "sources": [
+    "arxiv"
+  ],
+  "keywords": [
+    "interpretability",
+    "alignment",
+    "evaluation",
+    "robustness",
+    "scalable oversight",
+    "red teaming",
+    "reward hacking"
+  ],
+  "askExamples": [
+    "Interpretability of small models",
+    "Evaluations for scalable oversight"
+  ],
+  "rubric": [
+    {
+      "id": "relevance",
+      "label": "Relevance",
+      "weight": 0.35,
+      "description": "Relevant to alignment, interpretability, or evaluation work."
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty",
+      "weight": 0.25,
+      "description": "New method, finding, or threat model."
+    },
+    {
+      "id": "rigor",
+      "label": "Rigor",
+      "weight": 0.3,
+      "description": "Experimental design, baselines, and claims that match the evidence."
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility",
+      "weight": 0.1,
+      "description": "Readable without deep ML background."
+    }
+  ],
+  "accent": "#c0443a",
+  "builds": [
+    "full"
+  ],
+  "order": 6,
+  "arxiv": {
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "cs.CR"
+    ],
+    "useKeywords": true
+  }
+}

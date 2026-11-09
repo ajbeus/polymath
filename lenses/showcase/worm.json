@@ -1,0 +1,60 @@
+{
+  "id": "worm",
+  "name": "C. elegans worm lab",
+  "shortName": "Worm lab",
+  "description": "Nematode behavior and volatile organic compounds (VOCs): chemosensation, odor-guided behavior, and the chemistry of what worms emit and detect.",
+  "sources": [
+    "pubmed",
+    "biorxiv"
+  ],
+  "keywords": [
+    "C. elegans",
+    "nematode",
+    "volatile organic compounds",
+    "chemotaxis",
+    "olfaction",
+    "pheromone",
+    "ascaroside",
+    "behavioral assay"
+  ],
+  "askExamples": [
+    "Which volatile compounds attract C. elegans?",
+    "New assays for nematode chemotaxis"
+  ],
+  "rubric": [
+    {
+      "id": "relevance",
+      "label": "Relevance",
+      "weight": 0.4,
+      "description": "Directly addresses nematode VOCs, chemosensation, or assays we could reuse."
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty",
+      "weight": 0.2,
+      "description": "New compounds, neurons, or methods compared with the last year of work."
+    },
+    {
+      "id": "rigor",
+      "label": "Rigor",
+      "weight": 0.25,
+      "description": "Sample sizes, controls, replication, and whether assays are validated."
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility",
+      "weight": 0.15,
+      "description": "How quickly a lab member could read it and act on it."
+    }
+  ],
+  "accent": "#3f8f5a",
+  "builds": [
+    "showcase",
+    "full"
+  ],
+  "order": 1,
+  "filter": "worm_voc",
+  "pubmed": {
+    "query": "(\"Caenorhabditis elegans\"[tiab] OR \"C. elegans\"[tiab] OR nematode[tiab]) AND (olfaction OR olfactory OR chemotaxis OR odor OR odorant OR volatile OR chemosensation OR pheromone OR ascaroside)"
+  }
+}

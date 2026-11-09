@@ -1,0 +1,62 @@
+{
+  "id": "compbio",
+  "name": "Computational biology",
+  "shortName": "Comp bio",
+  "description": "Genomics, single-cell methods, protein modelling, and statistical learning applied to biological data.",
+  "sources": [
+    "biorxiv",
+    "pubmed",
+    "arxiv"
+  ],
+  "keywords": [
+    "single-cell",
+    "genomics",
+    "protein structure",
+    "variant calling",
+    "Gaussian process",
+    "cancer genomics",
+    "gene regulation"
+  ],
+  "askExamples": [
+    "Gaussian process models for variant effects",
+    "Single-cell trajectory benchmarks"
+  ],
+  "rubric": [
+    {
+      "id": "relevance",
+      "label": "Relevance",
+      "weight": 0.35,
+      "description": "Computational methods applied to biological data you work with."
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty",
+      "weight": 0.25,
+      "description": "New model, dataset, or benchmark."
+    },
+    {
+      "id": "rigor",
+      "label": "Rigor",
+      "weight": 0.25,
+      "description": "Held-out validation, baselines, and statistics."
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility",
+      "weight": 0.15,
+      "description": "Readable by a biologist without a machine-learning background."
+    }
+  ],
+  "accent": "#c2417a",
+  "builds": [
+    "full"
+  ],
+  "order": 4,
+  "arxiv": {
+    "categories": [
+      "q-bio.GN",
+      "q-bio.QM"
+    ],
+    "useKeywords": true
+  }
+}

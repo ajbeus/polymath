@@ -1,0 +1,153 @@
+{
+  "digest": {
+    "lensId": "fusion",
+    "weekOf": "2026-11-02",
+    "generatedAt": "2026-11-05T06:00:00Z",
+    "summary": "Sample digest. Placeholder papers this week concentrate on surrogate models and disruption prediction, with a pretend materials overview as background. Nothing here is a real citation.",
+    "sinceLastVisit": {
+      "text": "Sample note: 6 new placeholder papers since your last visit; 1 moved up after a pretend re-rank.",
+      "newPapers": 6,
+      "reranked": 1
+    },
+    "recommendedIds": [
+      "SAMPLE-FUSION-01",
+      "SAMPLE-FUSION-02",
+      "SAMPLE-FUSION-03",
+      "SAMPLE-FUSION-04"
+    ]
+  },
+  "papers": [
+    {
+      "id": "SAMPLE-FUSION-01",
+      "lensId": "fusion",
+      "title": "Sample Paper F1: Placeholder Gaussian-process surrogate for plasma profiles",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-04",
+      "score": 0.82,
+      "summary": "Placeholder summary. A pretend surrogate model that speeds up an imaginary plasma simulator. Contains no real results.",
+      "whyMatched": "Sample match: \"Gaussian process\" and \"surrogate model\" overlap with lens keywords.",
+      "rubric": {
+        "relevance": 0.94,
+        "novelty": 0.77,
+        "rigor": 0.78,
+        "accessibility": 0.69
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-FUSION-02",
+      "lensId": "fusion",
+      "title": "Sample Paper F2: Fictional disruption predictor with calibrated alarms",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-03",
+      "score": 0.77,
+      "summary": "Placeholder summary. An invented machine-learning predictor for plasma disruptions, used to show a mid-length card.",
+      "whyMatched": "Sample match: disruption prediction keyword.",
+      "rubric": {
+        "relevance": 0.9,
+        "novelty": 0.72,
+        "rigor": 0.74,
+        "accessibility": 0.6
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-FUSION-03",
+      "lensId": "fusion",
+      "title": "Sample Paper F3: Mock divertor heat-flux scaling study",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-02",
+      "score": 0.74,
+      "summary": "Placeholder summary. A made-up scaling law for heat load. Numbers are layout filler.",
+      "whyMatched": "Sample match: divertor keyword; strong rigor score is sample data.",
+      "rubric": {
+        "relevance": 0.82,
+        "novelty": 0.64,
+        "rigor": 0.83,
+        "accessibility": 0.58
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-FUSION-04",
+      "lensId": "fusion",
+      "title": "Sample Paper F4: Imaginary stellarator optimisation with sample constraints",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-31",
+      "score": 0.73,
+      "summary": "Placeholder summary. A pretend optimisation of coil shapes. Included to vary the rubric breakdown.",
+      "whyMatched": "Sample match: stellarator keyword.",
+      "rubric": {
+        "relevance": 0.78,
+        "novelty": 0.83,
+        "rigor": 0.68,
+        "accessibility": 0.52
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-FUSION-06",
+      "lensId": "fusion",
+      "title": "Sample Paper F6: Fictional real-time control with learned dynamics",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-29",
+      "score": 0.7,
+      "summary": "Placeholder summary. An invented reinforcement-learning controller. Sample data only.",
+      "whyMatched": "Sample match: plasma control.",
+      "rubric": {
+        "relevance": 0.74,
+        "novelty": 0.8,
+        "rigor": 0.61,
+        "accessibility": 0.57
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-FUSION-05",
+      "lensId": "fusion",
+      "title": "Sample Paper F5: Placeholder overview of fusion materials under neutron load",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "arxiv",
+      "date": "2026-10-30",
+      "score": 0.64,
+      "summary": "Placeholder summary. A pretend tutorial-style overview. High accessibility, low novelty by design.",
+      "whyMatched": "Sample match: weak overlap, surfaced as background reading.",
+      "rubric": {
+        "relevance": 0.69,
+        "novelty": 0.41,
+        "rigor": 0.62,
+        "accessibility": 0.91
+      },
+      "isSample": true
+    }
+  ]
+}

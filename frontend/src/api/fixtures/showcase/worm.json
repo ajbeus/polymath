@@ -1,0 +1,153 @@
+{
+  "digest": {
+    "lensId": "worm",
+    "weekOf": "2026-11-02",
+    "generatedAt": "2026-11-05T06:00:00Z",
+    "summary": "Sample digest. This week's placeholder papers lean toward assay methods and pheromone signalling, with one pretend chemistry pipeline that could matter for VOC work. None of this is real literature.",
+    "sinceLastVisit": {
+      "text": "Sample note: 6 new placeholder papers since your last visit; 2 moved up after a pretend re-rank.",
+      "newPapers": 6,
+      "reranked": 2
+    },
+    "recommendedIds": [
+      "SAMPLE-WORM-01",
+      "SAMPLE-WORM-02",
+      "SAMPLE-WORM-03",
+      "SAMPLE-WORM-04"
+    ]
+  },
+  "papers": [
+    {
+      "id": "SAMPLE-WORM-01",
+      "lensId": "worm",
+      "title": "Sample Paper W1: Placeholder odor-response assay in a nematode model",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "biorxiv",
+      "date": "2026-11-03",
+      "score": 0.82,
+      "summary": "Placeholder summary. Describes a made-up chemotaxis assay measuring worm movement toward a fictional volatile blend. No real data or findings.",
+      "whyMatched": "Sample match: shares the terms \"volatile\", \"chemotaxis\" and \"assay\" with the lens keywords.",
+      "rubric": {
+        "relevance": 0.93,
+        "novelty": 0.74,
+        "rigor": 0.7,
+        "accessibility": 0.82
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-WORM-02",
+      "lensId": "worm",
+      "title": "Sample Paper W2: Fictional ascaroside signalling under crowding",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "pubmed",
+      "date": "2026-11-02",
+      "score": 0.8,
+      "summary": "Placeholder summary. A pretend study of pheromone-like signals when worm density changes. Numbers are invented layout filler.",
+      "whyMatched": "Sample match: pheromone and ascaroside keywords overlap with the lens.",
+      "rubric": {
+        "relevance": 0.88,
+        "novelty": 0.81,
+        "rigor": 0.76,
+        "accessibility": 0.64
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-WORM-03",
+      "lensId": "worm",
+      "title": "Sample Paper W3: Mock GC-MS pipeline for headspace profiling",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "biorxiv",
+      "date": "2026-11-01",
+      "score": 0.78,
+      "summary": "Placeholder summary. Pretends to benchmark a headspace chemistry workflow for small animal cultures. All details are filler text.",
+      "whyMatched": "Sample match: VOC profiling method relevant to the chemistry side.",
+      "rubric": {
+        "relevance": 0.84,
+        "novelty": 0.69,
+        "rigor": 0.8,
+        "accessibility": 0.71
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-WORM-04",
+      "lensId": "worm",
+      "title": "Sample Paper W4: Imaginary interneuron circuit for odor discrimination",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "pubmed",
+      "date": "2026-10-31",
+      "score": 0.75,
+      "summary": "Placeholder summary. An invented neural circuit story used only to show how a card looks with a longer title.",
+      "whyMatched": "Sample match: olfaction keyword; novelty score is high because the topic is a sample.",
+      "rubric": {
+        "relevance": 0.79,
+        "novelty": 0.86,
+        "rigor": 0.72,
+        "accessibility": 0.55
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-WORM-05",
+      "lensId": "worm",
+      "title": "Sample Paper W5: Placeholder review of nematode behavioral phenotyping",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "pubmed",
+      "date": "2026-10-30",
+      "score": 0.66,
+      "summary": "Placeholder summary. A pretend review article. Included to show how reviews score lower on novelty and higher on accessibility.",
+      "whyMatched": "Sample match: broad overlap with \"behavioral assay\"; ranked lower as a review.",
+      "rubric": {
+        "relevance": 0.71,
+        "novelty": 0.38,
+        "rigor": 0.66,
+        "accessibility": 0.93
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-WORM-06",
+      "lensId": "worm",
+      "title": "Sample Paper W6: Fictional soil bacteria odor cues for worms",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "biorxiv",
+      "date": "2026-10-29",
+      "score": 0.64,
+      "summary": "Placeholder summary. An invented preprint about bacterial smells attracting worms. Low rigor score is deliberate sample data.",
+      "whyMatched": "Sample match: weak overlap, surfaced for coverage rather than precision.",
+      "rubric": {
+        "relevance": 0.66,
+        "novelty": 0.72,
+        "rigor": 0.52,
+        "accessibility": 0.68
+      },
+      "isSample": true
+    }
+  ]
+}

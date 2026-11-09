@@ -1,0 +1,129 @@
+{
+  "isSample": true,
+  "lastIngestAt": "2026-11-05T06:00:00Z",
+  "nextIngestAt": "2026-11-06T06:00:00Z",
+  "sources": [
+    {
+      "source": "arxiv",
+      "indexed": 12480,
+      "addedLast24h": 212,
+      "lastIngestAt": "2026-11-05T06:00:00Z",
+      "state": "ok"
+    },
+    {
+      "source": "pubmed",
+      "indexed": 8310,
+      "addedLast24h": 143,
+      "lastIngestAt": "2026-11-05T05:42:00Z",
+      "state": "ok"
+    },
+    {
+      "source": "biorxiv",
+      "indexed": 3925,
+      "addedLast24h": 58,
+      "lastIngestAt": "2026-11-05T04:10:00Z",
+      "state": "delayed"
+    }
+  ],
+  "evaluation": {
+    "k": 5,
+    "precisionAtK": 0.72,
+    "ndcg": 0.81,
+    "citationValidity": 1,
+    "coverage": {
+      "polymath": 0.64,
+      "generalChatbot": 0.31
+    },
+    "labeledQueries": 40,
+    "lastRunAt": "2026-11-04T22:00:00Z"
+  },
+  "cost": {
+    "budgetUsdPerDay": 2,
+    "days": [
+      {
+        "date": "2026-10-23",
+        "usd": 0.42,
+        "tokensIn": 210000,
+        "tokensOut": 18000
+      },
+      {
+        "date": "2026-10-24",
+        "usd": 0.38,
+        "tokensIn": 190000,
+        "tokensOut": 16000
+      },
+      {
+        "date": "2026-10-25",
+        "usd": 0.21,
+        "tokensIn": 104000,
+        "tokensOut": 9000
+      },
+      {
+        "date": "2026-10-26",
+        "usd": 0.55,
+        "tokensIn": 280000,
+        "tokensOut": 24000
+      },
+      {
+        "date": "2026-10-27",
+        "usd": 0.61,
+        "tokensIn": 305000,
+        "tokensOut": 27000
+      },
+      {
+        "date": "2026-10-28",
+        "usd": 0.47,
+        "tokensIn": 236000,
+        "tokensOut": 20000
+      },
+      {
+        "date": "2026-10-29",
+        "usd": 0.52,
+        "tokensIn": 262000,
+        "tokensOut": 22000
+      },
+      {
+        "date": "2026-10-30",
+        "usd": 0.44,
+        "tokensIn": 221000,
+        "tokensOut": 19000
+      },
+      {
+        "date": "2026-10-31",
+        "usd": 0.39,
+        "tokensIn": 196000,
+        "tokensOut": 17000
+      },
+      {
+        "date": "2026-11-01",
+        "usd": 0.23,
+        "tokensIn": 115000,
+        "tokensOut": 10000
+      },
+      {
+        "date": "2026-11-02",
+        "usd": 0.68,
+        "tokensIn": 340000,
+        "tokensOut": 30000
+      },
+      {
+        "date": "2026-11-03",
+        "usd": 0.74,
+        "tokensIn": 371000,
+        "tokensOut": 33000
+      },
+      {
+        "date": "2026-11-04",
+        "usd": 0.58,
+        "tokensIn": 290000,
+        "tokensOut": 26000
+      },
+      {
+        "date": "2026-11-05",
+        "usd": 0.49,
+        "tokensIn": 245000,
+        "tokensOut": 21000
+      }
+    ]
+  }
+}

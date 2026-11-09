@@ -54,9 +54,10 @@ polymath/
 
 ```bash
 git clone <this-repo-url>
-cd polymath/frontend
+cd polymath
+cp .env.example .env      # the .env lives at the repo root
+cd frontend
 npm install
-cp ../.env.example .env
 npm run dev
 ```
 

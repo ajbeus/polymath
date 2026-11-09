@@ -1,0 +1,129 @@
+{
+  "digest": {
+    "lensId": "compbio",
+    "weekOf": "2026-11-02",
+    "generatedAt": "2026-11-05T06:00:00Z",
+    "summary": "Sample digest. Placeholder papers this week focus on probabilistic models for variant effects and a single-cell benchmark. Entirely fake content.",
+    "sinceLastVisit": {
+      "text": "Sample note: 5 new placeholder papers since your last visit.",
+      "newPapers": 5,
+      "reranked": 0
+    },
+    "recommendedIds": [
+      "SAMPLE-COMPBIO-01",
+      "SAMPLE-COMPBIO-02",
+      "SAMPLE-COMPBIO-03"
+    ]
+  },
+  "papers": [
+    {
+      "id": "SAMPLE-COMPBIO-01",
+      "lensId": "compbio",
+      "title": "Sample Paper C1: Placeholder Gaussian-process model for tumour variant effects",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "biorxiv",
+      "date": "2026-11-04",
+      "score": 0.77,
+      "summary": "Placeholder summary. A pretend cancer genomics model. Contains no real findings.",
+      "whyMatched": "Sample match: \"Gaussian process\" and \"cancer genomics\".",
+      "rubric": {
+        "relevance": 0.91,
+        "novelty": 0.76,
+        "rigor": 0.7,
+        "accessibility": 0.6
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-COMPBIO-02",
+      "lensId": "compbio",
+      "title": "Sample Paper C2: Fictional single-cell trajectory benchmark",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "biorxiv",
+      "date": "2026-11-02",
+      "score": 0.77,
+      "summary": "Placeholder summary. An invented benchmark for cell trajectory tools.",
+      "whyMatched": "Sample match: single-cell keyword.",
+      "rubric": {
+        "relevance": 0.84,
+        "novelty": 0.7,
+        "rigor": 0.82,
+        "accessibility": 0.62
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-COMPBIO-03",
+      "lensId": "compbio",
+      "title": "Sample Paper C3: Mock protein structure refinement with sample restraints",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C",
+        "Sample Author D"
+      ],
+      "source": "arxiv",
+      "date": "2026-11-01",
+      "score": 0.69,
+      "summary": "Placeholder summary. Filler text.",
+      "whyMatched": "Sample match: protein structure keyword.",
+      "rubric": {
+        "relevance": 0.77,
+        "novelty": 0.73,
+        "rigor": 0.66,
+        "accessibility": 0.48
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-COMPBIO-04",
+      "lensId": "compbio",
+      "title": "Sample Paper C4: Imaginary enhancer activity predictor",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B"
+      ],
+      "source": "pubmed",
+      "date": "2026-10-30",
+      "score": 0.67,
+      "summary": "Placeholder summary. Filler text.",
+      "whyMatched": "Sample match: gene regulation keyword.",
+      "rubric": {
+        "relevance": 0.72,
+        "novelty": 0.68,
+        "rigor": 0.58,
+        "accessibility": 0.66
+      },
+      "isSample": true
+    },
+    {
+      "id": "SAMPLE-COMPBIO-05",
+      "lensId": "compbio",
+      "title": "Sample Paper C5: Placeholder review of variant calling pipelines",
+      "authors": [
+        "Sample Author A",
+        "Sample Author B",
+        "Sample Author C"
+      ],
+      "source": "pubmed",
+      "date": "2026-10-29",
+      "score": 0.62,
+      "summary": "Placeholder summary. A pretend review.",
+      "whyMatched": "Sample match: variant calling keyword.",
+      "rubric": {
+        "relevance": 0.63,
+        "novelty": 0.37,
+        "rigor": 0.7,
+        "accessibility": 0.9
+      },
+      "isSample": true
+    }
+  ]
+}

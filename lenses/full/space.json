@@ -1,0 +1,62 @@
+{
+  "id": "space",
+  "name": "Space and astronomy",
+  "shortName": "Space",
+  "description": "Observational astronomy, exoplanets, cosmology, and instrument and mission results.",
+  "sources": [
+    "arxiv"
+  ],
+  "keywords": [
+    "exoplanet",
+    "JWST",
+    "cosmology",
+    "gravitational waves",
+    "transient",
+    "stellar populations",
+    "dark matter"
+  ],
+  "askExamples": [
+    "Exoplanet atmosphere retrievals",
+    "Dark matter constraints this month"
+  ],
+  "rubric": [
+    {
+      "id": "relevance",
+      "label": "Relevance",
+      "weight": 0.35,
+      "description": "Fits your astronomy watch list."
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty",
+      "weight": 0.3,
+      "description": "New observation or method."
+    },
+    {
+      "id": "rigor",
+      "label": "Rigor",
+      "weight": 0.2,
+      "description": "Error budgets, calibration, independent confirmation."
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility",
+      "weight": 0.15,
+      "description": "Readable outside the subfield."
+    }
+  ],
+  "accent": "#2f7fc4",
+  "builds": [
+    "full"
+  ],
+  "order": 5,
+  "arxiv": {
+    "categories": [
+      "astro-ph.EP",
+      "astro-ph.CO",
+      "astro-ph.HE",
+      "gr-qc"
+    ],
+    "useKeywords": true
+  }
+}

@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+*.tsbuildinfo
+
+# environment (keep the example)
+.env
+.env.*
+!.env.example
+
+# python (future backend)
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# data and secrets that must never be committed
+*.sqlite
+*.db
+data/
+*.pem
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.claude/settings.local.json
