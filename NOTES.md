@@ -27,7 +27,7 @@ npm run dev:showcase      # or dev:full
 npm run dev:live          # against the real backend at http://127.0.0.1:8765 (start the backend first)
 npm run build:showcase    # typecheck + build; also build:full
 ```
-Backend (from `backend/`, Windows paths; venv already created):
+Backend (bash syntax, from `backend/`; PowerShell versions below; venv already created):
 ```
 .venv/Scripts/python -m pip install -r requirements.txt
 .venv/Scripts/python -m app.ingest --source arxiv --days 14 --max 200
@@ -36,6 +36,13 @@ Backend (from `backend/`, Windows paths; venv already created):
 .venv/Scripts/python -m uvicorn app.main:app --port 8765
 ```
 Eval (from repo root): `backend/.venv/Scripts/python eval/run_eval.py worm` (add `--use-guesses` for unlabeled smoke test); `eval/build_pool.py worm` grows the pool.
+**PowerShell** (the user's shell; bash env-prefix like `VITE_BUILD=full cmd` does not work there). From `backend\`:
+```powershell
+$env:VITE_BUILD = "full"      # this window only; or set it in the root .env
+.venv\Scripts\python -m app.ingest --source biorxiv --days 14
+.venv\Scripts\python -m uvicorn app.main:app --port 8765
+```
+From `frontend\`: `npm run dev:live`. From repo root: `backend\.venv\Scripts\python evalun_eval.py worm --use-guesses`.
 DB lives at `backend/data/polymath.sqlite` (git-ignored). Optional env: `NCBI_API_KEY`, `CONTACT_EMAIL`, `DIGEST_DAYS`, `POLYMATH_DB`.
 
 ## What's left

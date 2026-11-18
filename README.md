@@ -45,9 +45,9 @@ The front end talks to everything through a typed API layer. It uses a mock back
 ```
 polymath/
   frontend/   React + TypeScript + Vite + Tailwind
-  backend/    (planned) ingestion, ranking, API
-  lenses/     (planned) per-topic config files
-  eval/       (planned) labeled sets and benchmarks
+  backend/    FastAPI + SQLite: ingest (arXiv, PubMed, bioRxiv), stage-1 ranking, API
+  lenses/     per-topic config files
+  eval/       labeled sets and the evaluation harness
 ```
 
 ## Getting started
@@ -60,6 +60,31 @@ cd frontend
 npm install
 npm run dev
 ```
+
+On Windows PowerShell, the same steps (`cp` becomes `Copy-Item`):
+
+```powershell
+git clone <this-repo-url>
+cd polymath
+Copy-Item .env.example .env
+cd frontend
+npm install
+npm run dev
+```
+
+### Real papers (backend), PowerShell, from `backend\`
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt     # once
+$env:VITE_BUILD = "full"                                      # optional; this window only (or set it in .env)
+.venv\Scripts\python -m app.ingest --source arxiv
+.venv\Scripts\python -m app.ingest --source pubmed --lens worm
+.venv\Scripts\python -m app.ingest --source biorxiv --days 14
+.venv\Scripts\python -m uvicorn app.main:app --port 8765
+```
+
+Then, from `frontend\` in a second terminal: `npm run dev:live`.
 
 ### Builds
 
