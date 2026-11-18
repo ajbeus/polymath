@@ -8,6 +8,7 @@ import { useAsync } from './hooks/useAsync'
 import { useRoute } from './hooks/useRoute'
 import { useTheme } from './hooks/useTheme'
 import { DigestView } from './views/DigestView'
+import { SavedView } from './views/SavedView'
 import { SystemView } from './views/SystemView'
 
 function Shell() {
@@ -41,7 +42,9 @@ function Shell() {
         onSelectLens={(id) => go({ view: 'digest', lensId: id })}
       />
       <main id="main" className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
-        {route.view === 'system' ? <SystemView lenses={lenses} /> : <DigestView lens={active} lenses={lenses} />}
+        {route.view === 'system' ? <SystemView lenses={lenses} />
+          : route.view === 'saved' ? <SavedView lenses={lenses} />
+          : <DigestView lens={active} lenses={lenses} />}
       </main>
       <footer className="mx-auto max-w-6xl px-4 pb-10 text-xs text-muted sm:px-6">
         {SAMPLE_MODE

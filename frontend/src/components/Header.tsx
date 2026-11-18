@@ -85,13 +85,11 @@ export function Header({ lenses, activeLensId, route, theme, onToggleTheme, onSe
         </a>
         <nav aria-label="Primary" className="flex gap-1">
           {navLink({ view: 'digest', lensId: activeLensId }, 'Digest', route.view === 'digest')}
+          {navLink({ view: 'saved' }, savedCount > 0 ? `Saved (${savedCount})` : 'Saved', route.view === 'saved')}
           {navLink({ view: 'system' }, 'System', route.view === 'system')}
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
-          {savedCount > 0 && (
-            <span className="hidden font-mono text-xs text-muted sm:inline" aria-live="polite">{savedCount} saved</span>
-          )}
           <span
             className="hidden rounded border border-rule px-2 py-0.5 font-mono text-[11px] uppercase tracking-wider text-muted md:inline"
             title="Set with VITE_BUILD"
@@ -131,7 +129,7 @@ export function Header({ lenses, activeLensId, route, theme, onToggleTheme, onSe
       </div>
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <LensTabs lenses={lenses} activeLensId={activeLensId} onSelect={onSelectLens} disabled={route.view === 'system'} />
+        <LensTabs lenses={lenses} activeLensId={activeLensId} onSelect={onSelectLens} disabled={route.view !== 'digest'} />
       </div>
     </header>
   )
