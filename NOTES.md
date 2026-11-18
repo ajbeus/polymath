@@ -1,6 +1,6 @@
 # NOTES
 
-Handoff notes for Polymath (CSE 455). Keep this short and current. Last updated 2026-11-09.
+Handoff notes for Polymath (CSE 455). Keep this short and current. Last updated 2026-11-18.
 
 ## Architecture
 - `frontend/`: React + TS + Vite + Tailwind v4. Talks only to `src/api/index.ts` (`PolymathApi`). If `VITE_API_URL` is set it uses `src/api/http.ts` (real backend, no sample badges); otherwise `src/api/mock.ts` (JSON fixtures, fake delay, "Sample data" badges everywhere). Mock mode is the safe demo default.
@@ -39,10 +39,10 @@ Eval (from repo root): `backend/.venv/Scripts/python eval/run_eval.py worm` (add
 DB lives at `backend/data/polymath.sqlite` (git-ignored). Optional env: `NCBI_API_KEY`, `CONTACT_EMAIL`, `DIGEST_DAYS`, `POLYMATH_DB`.
 
 ## What's left
-1. **Eval set: harness built, labels need the user.** `eval/worm/pool.csv` has 120 papers (70 kept + 50 rejected by the worm filter). The `claude_guess` column is Claude's unreviewed first pass (31 relevant, 19 related, 70 not). User must fill the `label` column (0/1/2; see `eval/README.md`; check rows with a "Claude unsure" note first). Run `backend/.venv/Scripts/python eval/run_eval.py worm` after any ranking change. Smoke-test result with guesses: P@10 strict 0.80, nDCG@10 0.86, filter recall 0.97 strict / 0.90 lenient, kept precision 0.64 (NOT a measurement). Not built: per-question (Ask) eval, coverage vs chatbot, wiring results into `/status`, labeled sets for fusion/math.
+1. **Eval set: harness built, labels need the user.** `eval/worm/pool.csv` has 120 papers (70 kept + 50 rejected by the worm filter). The `claude_guess` column is Claude's unreviewed first pass (31 relevant, 19 related, 70 not). **User chose to run on the guesses for now (2026-11-18) and will review labels later: remind them before the worm filter is tuned or stage 2 is built.** To make them human labels, fill the `label` column (0/1/2; see `eval/README.md`; check rows with a "Claude unsure" note first). Run `backend/.venv/Scripts/python eval/run_eval.py worm` after any ranking change. Smoke-test result with guesses: P@10 strict 0.80, nDCG@10 0.86, filter recall 0.97 strict / 0.90 lenient, kept precision 0.64 (NOT a measurement). Not built: per-question (Ask) eval, coverage vs chatbot, wiring results into `/status`, labeled sets for fusion/math.
 2. ~~Wire front end to backend~~ done: `http.ts`, `VITE_API_URL`, UI shows "n/a" for unscored criteria and handles null evaluation/ingest times and empty links. Verified in the browser with live data (digest, ask, feedback saved to SQLite, system page).
 3. **Stage 2 ranking:** Claude scores novelty/rigor/accessibility against the lens rubric (needs `ANTHROPIC_API_KEY`; track token cost for the status page).
-4. **bioRxiv ingest** (worm lens lists it; status shows 0 papers).
+4. ~~bioRxiv ingest~~ done (`app/sources/biorxiv.py`, no key). The API has no search, so `--source biorxiv` scans every preprint in the window (~3300 per 14 days) and stores only lens matches; `--max` caps matches per lens. compbio hit the 200 cap, so raise `--max` if wanted. Worm lens: 4 bioRxiv matches, all C. elegans but only loosely odor-related. Comp bio has no PubMed query yet.
 5. **Worm filter tuning:** passing mentions of "odor"/"chemotaxis" still pass as "maybe" (seizure, lifespan papers); aging penalty can sink real chemosensation papers; consider an odorant-compound list. Tune against the eval set, not by hand.
 6. **Cross-lens links** (endpoint returns `[]`), feedback-driven re-ranking, scheduled nightly ingest, voice button (disabled).
 7. Untested: arXiv ingest for compbio/space/aisafety lenses; full build against the backend.

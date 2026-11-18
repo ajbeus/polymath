@@ -44,10 +44,13 @@ def citation_ok(paper_id: str) -> bool:
         return bool(re.fullmatch(r"\d+", row["external_id"])) and row["url"] == f"https://pubmed.ncbi.nlm.nih.gov/{row['external_id']}/"
     if row["source"] == "arxiv":
         return row["url"] == f"https://arxiv.org/abs/{row['external_id']}"
+    if row["source"] == "biorxiv":
+        return bool(re.fullmatch(r"10\.\d+/\S+", row["external_id"])) and row["url"] == f"https://www.biorxiv.org/content/{row['external_id']}"
     return False
 
 
 def main() -> int:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("lens")
     ap.add_argument("--use-guesses", action="store_true", help="use claude_guess where label is blank")
